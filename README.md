@@ -3,7 +3,9 @@
 Homebrew tap for my apps.
 
 ```sh
-brew install --cask vseriousv/tap/inero-movie
+brew tap vseriousv/tap
+brew trust vseriousv/tap          # Homebrew 7+ asks you to trust a third-party tap once
+brew install --cask inero-movie
 ```
 
 | Cask | What it is |
