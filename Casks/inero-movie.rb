@@ -1,6 +1,6 @@
 cask "inero-movie" do
-  version "0.1.1"
-  sha256 "d9053a1b37c7c36f8365a9b31a8c5dec8deb3cfaf62aa34b91c01cc279240c24"
+  version "0.1.2"
+  sha256 "bf84fce2c8675714ea2ffd6b05adbc1f2264ff5a53e2e6d4c79bcb26c0391a8d"
 
   url "https://github.com/vseriousv/inero-movie-releases/releases/download/v#{version}/Inero-Movie-#{version}.dmg"
   name "Inero Movie"
@@ -16,6 +16,7 @@ cask "inero-movie" do
   depends_on macos: :sequoia
 
   app "Inero Movie.app"
+  binary "#{appdir}/Inero Movie.app/Contents/Resources/inero"
 
   zap trash: [
     "~/Library/Application Support/Inero Movie",
